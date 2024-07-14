@@ -1,0 +1,172 @@
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3d0d1;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header, footer {
+    background-color: #EB6F74; 
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+header h1, footer p {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #EB6F74;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    background-color: white;
+    color: #EB6F74; 
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    flex: 1;
+    background-color: #dfa3a5;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 3%;
+    padding: 20px; 
+}
+
+.about-me {
+    background-color: #f19093;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+h1, h2, h3 {
+    color: #EB6F74;
+}
+
+footer {
+    padding: 20px 0;
+    background-color: #EB6F74;
+    color: white;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #333;
+}
+
+.skills, .contact, .internship, .goals, .interests, .culture {
+    padding: 20px;
+}
+
+.skills ul, .internship ul, .goals ul, .interests ul, .culture ul {
+    background-color: #f19093; 
+    padding: 20px; 
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    margin-bottom: 20px; 
+    list-style-type: disc; 
+    margin-left: 20px; 
+}
+
+
+
+
+
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; 
+}
+
+.gallery img {
+    width: calc(50% - 10px); 
+    height: auto;
+    transition: transform 0.2s;
+    border-radius: 5%;
+}
+
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form input[type="submit"] {
+    background-color: #EB6F74; 
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form input[type="submit"]:hover {
+    background-color: #333;
+}
+
+@media (max-width: 960px) {
+    .container {
+        width: 90%;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 600px) {
+    header, footer {
+        padding: 0.5em 0;
+    }
+
+    nav a {
+        padding: 8px 15px;
+    }
+}
